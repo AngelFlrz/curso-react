@@ -1,18 +1,16 @@
 // promises
 
-const aplicarDescuento = new Promise[
- (resolve, reject) => {
-  setTimeout(() => {
-   let descuento = false
+const aplicarDescuento = new Promise((resolve, reject) => {
+ setTimeout(() => {
+  let descuento = true
 
-   if (descuento) {
-    resolve('Descuento aplicado!')
-   } else {
-    reject('No se pudo aplicar el descuento')
-   }
-  }, 3000)
- }
-]()
+  if (descuento) {
+   resolve('Descuento aplicado!')
+  } else {
+   reject('No se pudo aplicar el descuento')
+  }
+ }, 3000)
+})
 
 aplicarDescuento
  .then((resultado) => {
